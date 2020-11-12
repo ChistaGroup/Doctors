@@ -1,0 +1,139 @@
+﻿
+@model Task1.Models.ViewModels.DoctorsCreateEditViewModel
+@addTagHelper *, Microsoft.AspNetCore.Mvc.TagHelpers
+@{
+    ViewData["Title"] = "Edit";
+}
+
+<h1>Edit</h1>
+
+<div class="row text-right">
+    <div class="col-md-4 pull-right">
+        <form asp-action="Edit">
+            @if (ViewBag.msgSuccess != null)
+            {
+                @ViewBag.msgSuccess
+            }
+            @if (ViewBag.msgFailed != null)
+            {
+                @ViewBag.msgFailed
+            }
+            <div asp-validation-summary="All" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Row" class="control-label"></label>
+                <input asp-for="Row" class="form-control" />
+                <span asp-validation-for="Row" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DoctorID" class="control-label"></label>
+                <input asp-for="DoctorID" class="form-control" />
+                <span asp-validation-for="DoctorID" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Name" class="control-label"></label>
+                <input asp-for="Name" class="form-control" />
+                <span asp-validation-for="Name" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Family" class="control-label"></label>
+                <input asp-for="Family" class="form-control" />
+                <span asp-validation-for="Family" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Image" class="control-label"></label>
+                <input asp-for="Image" class="form-control" />
+                <span asp-validation-for="Image" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="OfficeImage" class="control-label"></label>
+                <input asp-for="OfficeImage" class="form-control" />
+                <span asp-validation-for="OfficeImage" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="BirthDate" class="control-label"></label>
+                <input asp-for="BirthDate" class="form-control" />
+                <span asp-validation-for="BirthDate" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="MyProperty" class="control-label"></label>
+                <input asp-for="MyProperty" class="form-control" />
+                <span asp-validation-for="MyProperty" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Desc" class="control-label"></label>
+                <input asp-for="Desc" class="form-control" />
+                <span asp-validation-for="Desc" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="ذخیره تغییرات" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+
+
+
+@*کدهای  زیر قبل از تغییرات اجرا میشدن*@
+@*<div class="row text-right">
+        <div class="col-md-4 right">
+            <form asp-action="Edit">
+                <input type="hidden" asp-for="DoctorID" />
+                <div class="form-group">
+                    <label asp-for="Row"></label>
+                    <input asp-for="Row" class="form-control" type="text" />
+                    <span asp-validation-for="Row" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="DoctorID"></label>
+                    <input asp-for="DoctorID" class="form-control" type="text" />
+                    <span asp-validation-for="DoctorID" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Name"></label>
+                    <input asp-for="Name" class="form-control" type="text" />
+                    <span asp-validation-for="Name" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Family"></label>
+                    <input asp-for="Family" class="form-control" type="text" />
+                    <span asp-validation-for="Family" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Name"></label>
+                    <input asp-for="Name" class="form-control" type="text" />
+                    <span asp-validation-for="Name" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Image"></label>
+                    <input asp-for="Image" class="form-control" type="text" />
+                    <span asp-validation-for="Image" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="OfficeImage"></label>
+                    <input asp-for="OfficeImage" class="form-control" type="text" />
+                    <span asp-validation-for="OfficeImage" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="BirthDate"></label>
+                    <input asp-for="BirthDate" class="form-control" type="text" />
+                    <span asp-validation-for="BirthDate" class="text-danger"></span>
+                </div>            <div class="form-group">
+                    <label asp-for="MyProperty"></label>
+                    <input asp-for="MyProperty" class="form-control" type="text" />
+                    <span asp-validation-for="MyProperty" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <label asp-for="Desc"></label>
+                    <input asp-for="Desc" class="form-control" type="text" />
+                    <span asp-validation-for="Desc" class="text-danger"></span>
+                </div>
+                <div class="form-group">
+                    <input type="submit" value="ذخیره تغییرات" class="btn btn-primary" />
+                </div>
+            </form>
+
+        </div>
+
+    </div>*@
+
