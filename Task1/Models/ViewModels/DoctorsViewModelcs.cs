@@ -40,14 +40,10 @@ namespace Task1.Models.ViewModels
         [Display(Name ="توضیحات")]
         [Required(ErrorMessage = "وارد نمودن {0} الزامی است")]
         public string Desc { get; set; }
-
-
-
     }
 
     public class DoctorsIndexViewModel
     {
-
         public int Row { get; set; }
         public int DoctorID { get; set; }
         public string Name { get; set; }
